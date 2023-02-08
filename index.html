@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>tabs and modal</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230208222435">
+	<!--<link rel="shortcut icon" href="favicon.ico">-->
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+			</div>
+		</header>
+		<main class="page">
+			<div class="page__container">
+
+				<section class="tabs">
+					<h1 class="tabs__title">Tabs</h1>
+					<ul class="tabs__list">
+						<li class="tabs__item" data-tab="tab-1">Tab-1</li>
+						<li class="tabs__item" data-tab="tab-2">Tab-2</li>
+						<li class="tabs__item" data-tab="tab-3">Tab-3</li>
+					</ul>
+
+					<div class="tabs__card " data-tab-content id="tab-1">
+						<h3 class="tabs__card-subtitle">Tab-1</h3>
+						<p class="tabs__text">
+							1-Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur consequuntur cum nulla fugit
+							suscipit obcaecati dolorem qui soluta distinctio, quae culpa! Enim cumque sunt animi deleniti ipsum
+							veritatis repudiandae dicta?
+							Quam nostrum itaque animi esse doloremque! Deleniti dolores voluptatibus saepe, molestiae similique
+							inventore aliquam voluptatem dolore nesciunt aspernatur expedita veritatis laudantium ipsam amet
+							unde odit provident facilis delectus laboriosam exercitationem.
+						</p>
+					</div>
+
+					<div class="tabs__card hidden" data-tab-content id="tab-2">
+						<h3 class="tabs__card-subtitle">Tab-2</h3>
+						<p class="tabs__text">
+							2-Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur consequuntur cum nulla fugit
+							suscipit obcaecati dolorem qui soluta distinctio, quae culpa! Enim cumque sunt animi deleniti ipsum
+							veritatis repudiandae dicta?
+							Quam nostrum itaque animi esse doloremque! Deleniti dolores voluptatibus saepe, molestiae similique
+							inventore aliquam voluptatem dolore nesciunt aspernatur expedita veritatis laudantium ipsam amet
+							unde odit provident facilis delectus laboriosam exercitationem.
+						</p>
+					</div>
+
+					<div class="tabs__card hidden" data-tab-content id="tab-3">
+						<h3 class="tabs__card-subtitle">Tab-3</h3>
+						<p class="tabs__text">
+							3-Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur consequuntur cum nulla fugit
+							suscipit obcaecati dolorem qui soluta distinctio, quae culpa! Enim cumque sunt animi deleniti ipsum
+							veritatis repudiandae dicta?
+							Quam nostrum itaque animi esse doloremque! Deleniti dolores voluptatibus saepe, molestiae similique
+							inventore aliquam voluptatem dolore nesciunt aspernatur expedita veritatis laudantium ipsam amet
+							unde odit provident facilis delectus laboriosam exercitationem.
+						</p>
+					</div>
+
+				</section>
+
+				<section class="modal">
+					<h1 class="modal__title">Modal window</h1>
+
+					<button class="modal__btn" type="button" data-modal-button="modal-1">
+						Open modal window №1
+					</button>
+
+					<button class="modal__btn" type="button" data-modal-button="modal-2">
+						Open modal window №2
+					</button>
+
+					<div class="modal__wrapper wrapper-modal hidden" id="modal-1" data-modal>
+						<div class="wrapper-modal__box">
+
+							<div class="wrapper-modal__body">
+								<h3 class="wrapper-modal__title">Modal window №1</h3>
+
+								<div class="wrapper-modal__content">
+									<p class="wrapper-modal__text">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore deleniti deserunt at
+										sapiente officia commodi.
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore deleniti deserunt at
+										sapiente officia commodi.
+									</p>
+									<button class="wrapper-modal__btn" type="button" data-modal-close>Close a window</button>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+
+					<div class="modal__wrapper wrapper-modal hidden" id="modal-2" data-modal>
+						<div class="wrapper-modal__box">
+
+							<div class="wrapper-modal__body">
+								<h3 class="wrapper-modal__title">Modal window №2</h3>
+
+								<div class="wrapper-modal__content">
+									<p class="wrapper-modal__text">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore deleniti deserunt at
+										sapiente officia commodi.
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore deleniti deserunt at
+										sapiente officia commodi.
+									</p>
+									<button class="wrapper-modal__btn" type="button" data-modal-close>Close a window</button>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+
+				</section>
+
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20230208222435"></script>
+</body>
+
+</html>
